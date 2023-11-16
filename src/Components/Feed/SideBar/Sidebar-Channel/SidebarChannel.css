@@ -1,0 +1,27 @@
+.sidebarChannel>div {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    color: var(--header-primary);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.sidebarChannel_container:hover {
+    color: white;
+    background-color: #40464b;
+}
+
+.sidebarChannel>div>h1 {
+    margin-right: 14px;
+    color: var(--header-tertiary);
+}
+
+.sidebarChannel.selected {
+    background-color: var(--button-bg);
+    border-radius: 5px;
+}
+
+.sidebarChannel.selected>div>h1 {
+    color: var(--background-primary);
+}

@@ -1,0 +1,174 @@
+.popover_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.popover_container>.popover {
+    background-color: var(--background-primary);
+    border-radius: 4px;
+    position: relative;
+}
+
+.popover_container>.popover>.popover_heading {
+    text-align: center;
+    margin: 24px 16px;
+    color: var(--header-primary);
+}
+
+.popover_container>.popover>.popover_heading>div {
+    color: var(--header-secondary);
+    margin-top: 8px;
+}
+
+.popover_container>.popover>.input_field_container {
+    padding: 0 20px 16px 20px;
+}
+
+.popover_container>.popover>.input_field_container>.input_field:not(:first-child) {
+    margin-top: 16px;
+}
+
+.popover_container>.popover>.input_field_container>.input_field>h5 {
+    color: var(--header-secondary);
+    margin-bottom: 8px;
+}
+
+.popover_container>.popover>.input_field_container>.input_field>.error {
+    color: var(--text-danger);
+}
+
+.popover_container>.popover>.input_field_container>.input_field>.password_field>span {
+    display: none;
+}
+
+/* .popover_container > .popover > .input_field_container > .input_field > .password_field > .errorMessage */
+
+.popover_container>.popover>.input_field_container>.input_field>input {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    color: #dcddde;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 25rem;
+}
+
+.popover_container>.popover>.input_field_container>.input_field>input:hover {
+    border: 1px solid #040405;
+}
+
+.popover_container>.popover>.input_field_container>.input_field>input:focus {
+    border: 1px solid #00aff4;
+}
+
+.popover_container>.popover>#close {
+    color: #b9bbbe;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0.5;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+.popover_container>.popover>#close:hover {
+    opacity: 1;
+    color: #dcddde;
+}
+
+.popover_container>.popover>.button_container {
+    background-color: var(--background-secondary);
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popover_container>.popover>.button_container>button {
+    padding: 12px 30px;
+    border: none;
+    color: var(--header-primary);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.popover_container>.popover>.button_container>#cancel {
+    background: transparent;
+}
+
+.popover_container>.popover>.button_container>#cancel:hover {
+    text-decoration: underline;
+}
+
+.popover_container>.popover>.button_container>#done {
+    background-color: var(--button-bg);
+    border-radius: 3px;
+}
+
+.popover_container>.popover>.button_container>#done:hover {
+    background-color: var(--button-hover);
+    border-radius: 3px;
+}
+
+.popover_container>.popover>.avatar_container {
+    display: flex;
+    padding: 0 20px;
+}
+
+.popover_container>.popover>.avatar_container>.avatars {
+    /* height: 200px; */
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 3px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar:hover {
+    border: 2px solid var(--header-primary);
+    border-radius: 50%;
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar.selected {
+    border: 2px solid var(--header-primary);
+    border-radius: 50%;
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar>img {
+    width: 100%;
+    height: 100%;
+}
+
+.popover_container>.popover>.avatar_container>.avatar_preview_container {
+    width: 200px;
+    margin-bottom: 15px;
+    background-color: #45474d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.popover_container>.popover>.avatar_container>.avatar_preview_container>img {
+    width: 150px;
+    height: 150px;
+}

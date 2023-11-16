@@ -1,0 +1,49 @@
+:root {
+    --header-primary: #ffff;
+    --header-secondary: #b9bbbe;
+    --header-tertiary: gray;
+
+    --background-primary: #36393f;
+    --background-secondary: #2f3136;
+    --background-secondary-alt: #292b2f;
+    --background-tertiary: #202225;
+
+    --tooltip: #18191b;
+
+    --button-bg: #5865f2;
+    --button-hover: #3a46cc;
+    --button-controls-hover: #ffff;
+
+    --text-input-bg: rgba(0, 0, 0, 0.1);
+    --text-input-border: rgba(0, 0, 0, 0.3);
+    --text-input-border-hover: #040405;
+    --text-normal: #dcddde;
+    --text-link: #00aff4;
+    --text-area: #40444b;
+    --text-danger: #ed4245;
+    --text-muted: #72767d;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2E3338;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #202225;
+    border-radius: 5px;
+}

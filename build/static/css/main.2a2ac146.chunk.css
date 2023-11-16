@@ -1,0 +1,911 @@
+*,
+body {
+    margin: 0
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+:root {
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --header-tertiary: grey;
+    --background-primary: #36393f;
+    --background-secondary: #2f3136;
+    --background-secondary-alt: #292b2f;
+    --background-tertiary: #202225;
+    --tooltip: #18191b;
+    --button-bg: #5865f2;
+    --button-hover: #3a46cc;
+    --button-controls-hover: #fff;
+    --text-input-bg: rgba(0, 0, 0, 0.1);
+    --text-input-border: rgba(0, 0, 0, 0.3);
+    --text-input-border-hover: #040405;
+    --text-normal: #dcddde;
+    --text-link: #00aff4;
+    --text-area: #40444b;
+    --text-danger: #ed4245
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #36393f;
+    background-color: var(--background-primary);
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #2e3338
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202225;
+    border-radius: 5px
+}
+
+.login__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/4/61/ypDTNV.jpg);
+    background-size: cover
+}
+
+.login {
+    background-color: var(--background-primary);
+    padding: 30px;
+    border-radius: 7px;
+    -webkit-animation: popup .2s;
+    animation: popup .2s
+}
+
+.login__header {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.login__header>h2 {
+    color: var(--header-primary);
+    margin-bottom: 5px
+}
+
+.login__header>div {
+    color: var(--header-secondary)
+}
+
+.input__container {
+    margin-bottom: 15px
+}
+
+.input__field>.password-visibility:hover {
+    color: var(--header-primary)
+}
+
+.input__field {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.input__field>.password-visibility {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--header-tertiary);
+    cursor: pointer
+}
+
+.input__field>h5 {
+    color: var(--header-secondary);
+    margin-bottom: 5px
+}
+
+.input__field>input {
+    width: 25rem;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 15px;
+    background-color: var(--text-input-bg);
+    border: 1.5px solid var(--text-input-border);
+    outline: none;
+    color: var(--text-normal)
+}
+
+.input__field>input:hover {
+    border: 1.5px solid var(--text-input-border-hover);
+    transition: .5s
+}
+
+.button__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 25px
+}
+
+.button__container>button {
+    width: 100%;
+    color: #fff;
+    background-color: var(--button-bg);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 600
+}
+
+.button__container>button:active,
+.button__container>button:hover {
+    background-color: var(--button-hover)
+}
+
+.login>div:last-child {
+    font-size: small;
+    color: #72767d
+}
+
+.login>div:last-child>a {
+    color: var(--text-link);
+    text-decoration: none
+}
+
+.login>div:last-child:hover>a {
+    text-decoration: underline
+}
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-primary)
+}
+
+.loader {
+    width: 150px;
+    height: 150px
+}
+
+.signup__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/4/61/ypDTNV.jpg);
+    background-size: cover
+}
+
+.signup {
+    background-color: var(--background-primary);
+    padding: 30px;
+    border-radius: 7px;
+    -webkit-animation: popup .2s;
+    animation: popup .2s
+}
+
+@-webkit-keyframes popup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes popup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.signup__header {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.signup__header>h2 {
+    color: var(--header-primary);
+    margin-bottom: 5px
+}
+
+.signup>div:last-child {
+    font-size: small
+}
+
+.signup>div:last-child>a {
+    color: var(--text-link);
+    text-decoration: none
+}
+
+.signup>div:last-child:hover>a {
+    text-decoration: underline
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    min-width: 275px;
+    background-color: var(--background-secondary)
+}
+
+.sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: var(--header-primary);
+    border-bottom: 2px solid #26282c
+}
+
+.sidebar__channels {
+    flex: 1 1
+}
+
+.sidebar__channelsHeader {
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--header-secondary)
+}
+
+.sidebar__channelsHeader,
+.sidebar__header {
+    display: flex;
+    align-items: center
+}
+
+.sidebar__addChannel {
+    cursor: pointer;
+    padding: 5px
+}
+
+.sidebar__addChannel:hover {
+    color: var(--header-primary)
+}
+
+.sidebar__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-tertiary);
+    background-color: var(--background-secondary-alt);
+    padding: 0 10px
+}
+
+.sidebar__profile>.MuiAvatar-root {
+    background-color: var(--background-primary);
+    margin-right: 10px
+}
+
+.sidebar__profileInfo {
+    flex: 1 1;
+    padding: 10px
+}
+
+.sidebar__profileInfo>h3 {
+    color: var(--header-primary);
+    font-size: 15px
+}
+
+.sidebar__profileInfo>p {
+    font-size: 13px
+}
+
+.sidebar__profileIcons {
+    position: relative
+}
+
+.sidebar__profileIcons>.MuiSvgIcon-root {
+    padding: 5px
+}
+
+.sidebar__profileIcons>#profile_settings {
+    cursor: pointer
+}
+
+.sidebar__profileIcons>#profile_settings:hover {
+    color: var(--header-primary)
+}
+
+.sidebar__profileIcons>.dropdown {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 70%;
+    background-color: var(--tooltip);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2
+}
+
+.sidebar__profileIcons>.dropdown>.dropdown_content {
+    min-width: 120px;
+    padding: 10px;
+    color: #b9bbbe;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none
+}
+
+.sidebar__profileIcons>.dropdown>.dropdown_content:hover {
+    background-color: var(--button-hover);
+    color: #fff;
+    border-radius: 5px
+}
+
+.sidebar__profileIcons>.dropdown>hr {
+    border: none;
+    height: 1px;
+    background-color: #585757
+}
+
+.sidebarChannel_container {
+    padding: 0 5px;
+    margin-bottom: 10px
+}
+
+.sidebarChannel>div {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    color: var(--header-primary);
+    cursor: pointer;
+    font-weight: 600
+}
+
+.sidebarChannel_container:hover {
+    color: #fff;
+    background-color: #40464b
+}
+
+.sidebarChannel>div>h1 {
+    margin-right: 14px;
+    color: var(--header-tertiary)
+}
+
+.sidebarChannel.selected {
+    background-color: var(--button-bg);
+    border-radius: 5px
+}
+
+.sidebarChannel.selected>div>h1 {
+    color: var(--background-primary)
+}
+
+.chat {
+    flex-direction: column;
+    background-color: var(--background-primary);
+    width: 80%
+}
+
+.chat,
+.chat__body,
+.chat__messages__body {
+    display: flex;
+    height: 100%
+}
+
+.chat__messages__body {
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.chat__input {
+    color: var(--header-secondary);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 15px 25px;
+    border-radius: 10px;
+    background-color: var(--text-area);
+    position: relative
+}
+
+.chat__input>input {
+    padding: 5px 15px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline-width: 0;
+    color: var(--text-normal);
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: large;
+    outline: none;
+    flex: 1 1
+}
+
+.chat__input>.chat-icons {
+    cursor: pointer
+}
+
+.chat__input>.chat-icons:hover {
+    color: var(--header-primary)
+}
+
+.chat__input>.emoji-picker {
+    position: absolute;
+    bottom: 55px
+}
+
+.chat__messages {
+    max-height: 30.9rem;
+    overflow: auto
+}
+
+.chat__messages::-webkit-scrollbar {
+    width: 10px
+}
+
+.chat__messages::-webkit-scrollbar-track {
+    background: #26282c
+}
+
+.chat__messages::-webkit-scrollbar-thumb {
+    background: #474b53;
+    border-radius: 5px
+}
+
+.chat__messages::-webkit-scrollbar-thumb:hover {
+    background: #555
+}
+
+.channel__description {
+    width: 25%;
+    height: 100%;
+    background-color: var(--background-secondary);
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: default
+}
+
+.channel__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--header-primary);
+    width: 100%
+}
+
+.channel__title>h3 {
+    color: var(--header-tertiary);
+    font-size: 30px;
+    margin-right: 10px
+}
+
+.channel__title>.MuiSvgIcon-root {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: auto;
+    color: var(--header-secondary);
+    cursor: pointer
+}
+
+.channel__title>.MuiSvgIcon-root:hover {
+    color: var(--header-primary);
+    border-radius: 50%
+}
+
+.channel__users>.user {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center
+}
+
+.channel__users>.user>.MuiAvatar-root {
+    background-color: #42464b;
+    margin-right: 10px
+}
+
+.channel__users>.user>span {
+    color: var(--header-primary);
+    font-weight: bolder
+}
+
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5px;
+    min-height: 40px;
+    color: var(--header-tertiary);
+    border-bottom: 2px solid #26282c
+}
+
+.chatHeader__hash {
+    color: var(--header-tertiary);
+    font-size: 30px;
+    padding: 0 10px
+}
+
+.chatHeader__left>h3 {
+    display: flex;
+    align-items: center;
+    color: var(--header-primary)
+}
+
+.chatHeader__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.chatHeader__right>.control {
+    margin-left: 10px
+}
+
+.chatHeader__right>.MuiSvgIcon-root {
+    padding: 5px;
+    cursor: pointer
+}
+
+.chatHeader__right>.MuiSvgIcon-root:hover {
+    color: var(--header-primary)
+}
+
+.chatHeader__search {
+    display: flex;
+    align-items: center;
+    color: var(--header-tertiary);
+    background-color: #2f3135;
+    border-radius: 3px;
+    padding: 3px
+}
+
+.chatHeader__search>input {
+    background: transparent;
+    outline-width: 0;
+    color: var(--header-primary);
+    border: none
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--header-primary)
+}
+
+.message>.MuiAvatar-root {
+    background-color: #42464b
+}
+
+.message__info {
+    margin-left: 20px
+}
+
+.message__timestamp {
+    color: var(--header-tertiary);
+    margin-left: 20px;
+    font-size: x-small
+}
+
+.feed {
+    width: 100vw;
+    height: 100vh;
+    display: flex
+}
+
+.user_profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.user_profile>.profile_container {
+    width: 70%;
+    max-width: 683px;
+    min-width: 450px;
+    margin: auto 0;
+    position: relative
+}
+
+.user_profile>.profile_container>h2 {
+    color: var(--header-primary);
+    margin-bottom: 20px
+}
+
+.user_profile>.profile_container>.user_profile_card {
+    width: 100%;
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+    padding-bottom: 16px
+}
+
+.user_profile>.profile_container>.user_profile_card>.banner {
+    height: 100px;
+    background-color: #744221;
+    border-radius: 10px 10px 0 0
+}
+
+.user_profile>.profile_container>.user_profile_card>.user_info {
+    position: relative;
+    display: flex;
+    padding: 15px 20px 30px 130px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.user_profile>.profile_container>.user_profile_card>.user_info>#user_display_image {
+    width: 80px;
+    height: 80px;
+    background-color: #42464b;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    border: 8px solid var(--background-tertiary)
+}
+
+.user_profile>.profile_container>.user_profile_card>.user_info>#username {
+    color: var(--header-primary);
+    font-weight: 500
+}
+
+.user_profile>.profile_container>.user_profile_card>.user_info>button {
+    color: var(--header-primary);
+    background-color: var(--button-bg);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.user_profile>.profile_container>.user_profile_card>.user_info>button:hover {
+    background-color: var(--button-hover)
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls {
+    background-color: var(--background-secondary);
+    margin: 0 16px;
+    padding: 16px;
+    border-radius: 8px
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls>.control_field {
+    display: flex;
+    justify-content: space-between;
+    color: var(--header-primary)
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls>.control_field:not(:first-child) {
+    margin-top: 24px
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls>.control_field>div>h5 {
+    color: var(--header-secondary);
+    margin-bottom: 5px
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls>.control_field>button {
+    height: 35px;
+    padding: 0 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 5px;
+    color: var(--header-primary);
+    background-color: #4f545c;
+    cursor: pointer
+}
+
+.user_profile>.profile_container>.user_profile_card>.change_info_controls>.control_field>button:hover {
+    background-color: #5d6269
+}
+
+.user_profile>.close_container {
+    position: relative;
+    cursor: pointer
+}
+
+.user_profile>.close_container>#close {
+    color: var(--header-secondary);
+    border: 2px solid var(--header-secondary);
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 30px
+}
+
+.user_profile>.close_container>#close:hover {
+    background-color: rgba(114, 118, 125, .3)
+}
+
+.popover_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute
+}
+
+.popover_container>.popover {
+    background-color: var(--background-primary);
+    border-radius: 4px;
+    position: relative
+}
+
+.popover_container>.popover>.popover_heading {
+    text-align: center;
+    margin: 24px 16px;
+    color: var(--header-primary)
+}
+
+.popover_container>.popover>.popover_heading>div {
+    color: var(--header-secondary);
+    margin-top: 8px
+}
+
+.popover_container>.popover>.input_field_container {
+    padding: 0 16px 16px
+}
+
+.popover_container>.popover>.input_field_container>.input_field:not(:first-child) {
+    margin-top: 16px
+}
+
+.popover_container>.popover>.input_field_container>.input_field>h5 {
+    color: var(--header-secondary);
+    margin-bottom: 8px
+}
+
+.popover_container>.popover>.input_field_container>.input_field>.error {
+    color: var(--text-danger)
+}
+
+.popover_container>.popover>.input_field_container>.input_field>.password_field>span {
+    display: none
+}
+
+.popover_container>.popover>.input_field_container>.input_field>input {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    color: #dcddde;
+    font-size: 16px;
+    background: rgba(0, 0, 0, .1);
+    padding: 10px;
+    width: 25rem
+}
+
+.popover_container>.popover>.input_field_container>.input_field>input:hover {
+    border: 1px solid #040405
+}
+
+.popover_container>.popover>.input_field_container>.input_field>input:focus {
+    border: 1px solid #00aff4
+}
+
+.popover_container>.popover>#close {
+    color: #b9bbbe;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: .5;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer
+}
+
+.popover_container>.popover>#close:hover {
+    opacity: 1;
+    color: #dcddde
+}
+
+.popover_container>.popover>.button_container {
+    background-color: var(--background-secondary);
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.popover_container>.popover>.button_container>button {
+    padding: 12px 30px;
+    border: none;
+    color: var(--header-primary);
+    cursor: pointer;
+    font-weight: 500
+}
+
+.popover_container>.popover>.button_container>#cancel {
+    background: transparent
+}
+
+.popover_container>.popover>.button_container>#cancel:hover {
+    text-decoration: underline
+}
+
+.popover_container>.popover>.button_container>#done {
+    background-color: var(--button-bg);
+    border-radius: 3px
+}
+
+.popover_container>.popover>.button_container>#done:hover {
+    background-color: var(--button-hover);
+    border-radius: 3px
+}
+
+.popover_container>.popover>.avatar_container {
+    display: flex;
+    padding: 0 20px
+}
+
+.popover_container>.popover>.avatar_container>.avatars {
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-bottom: 15px
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 3px;
+    cursor: pointer;
+    border: 2px solid transparent
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar.selected,
+.popover_container>.popover>.avatar_container>.avatars>.avatar:hover {
+    border: 2px solid var(--header-primary);
+    border-radius: 50%
+}
+
+.popover_container>.popover>.avatar_container>.avatars>.avatar>img {
+    width: 100%;
+    height: 100%
+}
+
+.popover_container>.popover>.avatar_container>.avatar_preview_container {
+    width: 200px;
+    margin-bottom: 15px;
+    background-color: #45474d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px
+}
+
+.popover_container>.popover>.avatar_container>.avatar_preview_container>img {
+    width: 150px;
+    height: 150px
+}
+
+/*# sourceMappingURL=main.2a2ac146.chunk.css.map */
